@@ -1,0 +1,16 @@
+<html>
+   <head>
+      <title>Brevets Times</title>
+   </head>
+   <body>
+      <h1>Brevet Times</h1>
+      {% for article in items %}
+      <div>
+        <p>KM: {{article.km}}</p>
+        <p>OPEN: {{article.open}}</p>
+        <p>CLOSE: {{article.close}}</p>
+      </div>
+      {% endfor %}
+      <p>Click to return to  <a href="/">the home page</a>?</p>
+   </body>
+</html>
