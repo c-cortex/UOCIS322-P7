@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+   <head>
+      <title>Brevet Control Times</title>
+   </head>
+   <body>
+     {% if current_user.is_authenticated %}
+     <h1>Choose times to list</h1>
+     Hi, {{ current_user.fullname }}!
+     <form role="form">
+         <label>Do you want to display the list of times in CSV or JSON?</label>
+         <select name="format" id="format">
+             <option value="json">JSON</option>
+             <option value="csv">CSV</option>
+         </select>
+         <br><br>
+         <label>How many times do you want in the list?</label>
+         <input name="k" type="number" id="k"></input>
+         <br><br>
+         <button type="submit" formaction="/listAll">All Times</button>
+         <button type="submit" formaction="/listOpenOnly">Open Times</button>
+         <button type="submit" formaction="/listCloseOnly">Close Times</button>
+     </form>
+     {% else %}
+      <h2>Login to use the Brevet Time Claculator!</h2>
+      {% endif %}
+   </body>
+</html>
+{% endblock %}
