@@ -2,7 +2,7 @@
 ```
 Chris Cortes | ccortes@uoregon.edu
 
-# Brevets App #
+Brevets App
 
 Brevet time calculator with AJAX and MongoDB!
 
@@ -12,7 +12,7 @@ Brevet time calculator with AJAX and MongoDB!
 4. Click submit when you want to store control open and close times.
 5. Click display when you want to see the last set of control times stored.
 
-# RESTful API-services #
+RESTful API-services
 
 Brevet time calculator with AJAX, MongoDB, and a RESTful API!
 
@@ -23,7 +23,7 @@ Brevet time calculator with AJAX, MongoDB, and a RESTful API!
 2. Once form is summited, the data will be used to redirect to appropriate URL.
 3. Finally get the list of appropriate control times based on data and mongo database.
 
-# Login and Registration #
+Login and Registration
 
 Adding authentication and user interface to brevet time calculator service
 
